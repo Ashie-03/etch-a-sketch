@@ -49,6 +49,15 @@ function addHoverEffects() {
     cell.addEventListener('mouseover', () => onHoverEvent(cell))
 })};
 
+// Function to reset grid
+let reset = document.querySelector('.reset');
+reset.addEventListener('click', () => {
+    let gridCell = document.querySelectorAll('.grid');
+    gridCell.forEach(cell => {
+        cell.style.backgroundColor = '';
+    })
+})
+
 // create a 16x16 grid when page loads
 createGrid(gridSize);
 

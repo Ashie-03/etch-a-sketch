@@ -1,6 +1,15 @@
+:root {
+    --background-color: #AC87C5;
+    --text-color: #FFff;
+}
+body {
+    background-color: var(--background-color);
+}
+
 .container {
     text-align: center;
-    margin: 10px;
+    margin: 3px;
+    color: var(--text-color);
 }
 
 h1 {
@@ -10,6 +19,9 @@ h1 {
 
 button {
     margin: 7px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 0.5px solid var(--text-color);
 }
 
 .gridContainer {
@@ -21,6 +33,6 @@ button {
 }
 
 .grid {
-    border: 0.5px solid black;
+    border: 0.5px solid var(--text-color);
     box-sizing: border-box;
 }
